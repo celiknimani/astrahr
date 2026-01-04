@@ -1,21 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  /* Clean, deep space theme inspired */
+  /* Minimal, High-Contrast Theme (Personio-inspired) */
   --background: #ffffff;
-  --foreground: #0f172a; /* Slate 900 */
-  
-  --primary: #4f46e5; /* Indigo 600 */
+  --foreground: #111827;
+  /* Gray 900 */
+
+  --primary: #111827;
+  /* Black/Gray 900 */
   --primary-foreground: #ffffff;
-  
-  --secondary: #f1f5f9; /* Slate 100 */
-  --secondary-foreground: #0f172a;
-  
-  --muted: #f8fafc;
-  --muted-foreground: #64748b;
-  
-  --accent: #8b5cf6; /* Violet 500 */
-  --accent-foreground: #ffffff;
+
+  --secondary: #f3f4f6;
+  /* Gray 100 */
+  --secondary-foreground: #111827;
+
+  --muted: #f9fafb;
+  --muted-foreground: #6b7280;
+  /* Gray 500 */
+
+  --accent: #d8b4fe;
+  /* Soft Purple for gradients */
+  --accent-foreground: #111827;
+
+  --border: #e5e7eb;
 }
 
 @theme inline {
@@ -29,23 +36,49 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  
+  --color-border: var(--border);
+
   --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+
+  --animate-blob: blob 7s infinite;
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
+
+  /* Dark mode intentionally kept light/minimal for this specific brand direction 
+     unless user specifically asks for dark mode. Sticking to the reference image style. */
   :root {
-    --background: #020617; /* Slate 950 */
-    --foreground: #f8fafc; /* Slate 50 */
-    
-    --primary: #6366f1; /* Indigo 500 */
+    /* We will enforce light mode for the 'Coming Soon' look to match the reference image exactly
+        as it relies heavily on white space. */
+    --background: #ffffff;
+    --foreground: #111827;
+    --primary: #111827;
     --primary-foreground: #ffffff;
-    
-    --secondary: #1e293b; /* Slate 800 */
-    --secondary-foreground: #f8fafc;
-    
-    --muted: #0f172a; /* Slate 900 */
-    --muted-foreground: #94a3b8; /* Slate 400 */
+    --secondary: #f3f4f6;
+    --secondary-foreground: #111827;
+    --muted: #f9fafb;
+    --muted-foreground: #6b7280;
+    --accent: #d8b4fe;
+    --accent-foreground: #111827;
+    --border: #e5e7eb;
   }
 }
 
