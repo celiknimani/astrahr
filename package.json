@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:build": "NPM_CONFIG_LEGACY_PEER_DEPS=true npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev .vercel/output/static",
     "deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static"
   },
