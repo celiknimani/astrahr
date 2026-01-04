@@ -17,7 +17,6 @@ export function Header() {
                         <span className="text-sm font-medium text-muted-foreground hidden sm:block">
                             Coming 2026
                         </span>
-                        <Button size="sm" className="rounded-full px-6">Get Updates</Button>
                     </div>
                 </div>
             </Container>

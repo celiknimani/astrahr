@@ -22,18 +22,13 @@ export function InsightSection() {
                     Stop managing software and start managing outcomes. AI agents handle onboarding, compliance, and payroll automatically.
                 </p>
 
-                <Button variant="link" className="text-primary font-semibold text-lg gap-2 mb-16 hover:no-underline hover:text-orange-600 transition-colors">
-                    Explore Agents <ArrowRight className="h-4 w-4" />
-                </Button>
+
 
                 {/* Mock Graphic: Agent Action Card */}
                 <div className="relative w-full max-w-2xl mx-auto">
                     <div className="bg-white rounded-2xl shadow-xl border border-orange-100/50 overflow-hidden text-left">
                         <div className="bg-slate-50 border-b border-slate-100 px-6 py-4 flex items-center justify-between">
-                            <div className="flex items-center gap-3">
-                                <div className="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse" />
-                                <span className="text-sm font-semibold text-slate-700">Active Agents (3)</span>
-                            </div>
+
                             <div className="text-xs text-muted-foreground font-mono">
                                 System Status: Online
                             </div>

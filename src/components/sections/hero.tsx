@@ -22,7 +22,7 @@ export function Hero() {
                 </h1>
 
                 <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl leading-relaxed mb-10">
-                    One Intelligent HR Platform for every role you play — Core HR, Recruiting, Performance & Development and more.
+                    One Intelligent HR Platform for every role you play, Core HR, Recruiting, Performance & Development and more.
                     <br /><span className="font-semibold text-foreground mt-2 block">Coming 2026.</span>
                 </p>
 
@@ -30,9 +30,7 @@ export function Hero() {
                     <Button size="xl" className="rounded-lg h-14 px-8 text-base font-semibold bg-primary text-white hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl">
                         Join the Waitlist
                     </Button>
-                    <Button variant="outline" size="xl" className="rounded-lg h-14 px-8 text-base font-semibold border-2 border-primary/10 hover:bg-secondary/50">
-                        Read the Vision
-                    </Button>
+
                 </div>
             </Container>
         </section>
