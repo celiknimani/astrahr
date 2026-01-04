@@ -1,0 +1,13 @@
+# AstraHR
+> The AI-native HR platform for High-Performance Teams.
+
+## Documentation
+- [Home](https://astrahr.com/): The landing page and overview.
+
+## Core Concepts
+- **AI-First**: AstraHR is built from the ground up with LLMs to automate HR workflows.
+- **People Operations**: Streamline onboarding, offboarding, and performance reviews.
+- **Analytics**: Real-time insights into workforce dynamics.
+
+## Technical Details
+- Built with Next.js 16 and Tailwind CSS.
